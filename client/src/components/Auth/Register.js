@@ -30,7 +30,7 @@ function Register() {
       // Ensure that all required fields are sent in the request body
       const body = JSON.stringify({ name, email, password, phone, address, age, weight });
 
-      const res = await axios.post('/api/auth/register', body, config);
+      const res = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/auth/register', body, config);
 
       console.log('User registered successfully:', res.data);
 
