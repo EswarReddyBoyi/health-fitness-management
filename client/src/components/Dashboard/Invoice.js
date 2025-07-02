@@ -11,7 +11,7 @@ const Invoice = () => {
   useEffect(() => {
     const fetchInvoice = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/payments/invoice/${invoiceId}`);
+        const response = await axios.get(`https://health-fitness-management-system-backend.onrender.com/api/payments/invoice/${invoiceId}`);
         setInvoice(response.data);
       } catch (error) {
         console.error('Error fetching invoice:', error);
