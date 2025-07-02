@@ -19,7 +19,8 @@ const AddRecord = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/fitnessRecords', formData);  // Ensure URL is correct
+      const res = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/fitnessRecords', formData);
+ // Ensure URL is correct
       console.log('Record added successfully:', res.data);
       setMessage('Record added successfully');
     
