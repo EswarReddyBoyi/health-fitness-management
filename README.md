@@ -28,10 +28,11 @@ A full-stack MERN application that helps users manage fitness activities, calcul
 ```bash
 git clone https://github.com/YOUR_USERNAME/health-fitness-management.git
 cd health-fitness-management
-
+````
 ---
 
 ### 2. Install dependencies
+```bash
 For client:
 bash
 Copy
