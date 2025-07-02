@@ -17,7 +17,7 @@ const FitnessHistory = () => {
   useEffect(() => {
     const fetchRecords = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/fitnessRecords');
+        const res = await axios.get('https://health-fitness-management-system-backend.onrender.com/api/fitnessRecords');
         setRecords(res.data);
       } catch (err) {
         console.error('Error fetching records:', err);
