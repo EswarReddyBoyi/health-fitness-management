@@ -8,7 +8,7 @@ const AvailableSlots = () => {
   useEffect(() => {
     const fetchAvailableSlots = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/slots/available');
+        const response = await axios.get('https://health-fitness-management-system-backend.onrender.com/api/slots/available');
         setAvailableSlots(response.data);
       } catch (error) {
         console.error('Error fetching available slots:', error);
