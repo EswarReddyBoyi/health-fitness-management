@@ -64,7 +64,7 @@ const Stopwatch = () => {
     });
   
     try {
-      const res = await axios.post('http://localhost:5000/api/fitnessRecords', {
+      const res = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/fitnessRecords', {
         activityName,
         minutes: Math.floor(timer / 60), // Save time in minutes
         caloriesBurned, // Send calculated or static value
