@@ -8,7 +8,7 @@ const ReservedSlots = () => {
   useEffect(() => {
     const fetchReservedSlots = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/slots/reserved');
+        const response = await axios.get('https://health-fitness-management-system-backend.onrender.com/api/slots/reserved');
         setReservedSlots(response.data);
       } catch (error) {
         console.error('Error fetching reserved slots:', error);
