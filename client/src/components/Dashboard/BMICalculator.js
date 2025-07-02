@@ -10,7 +10,7 @@ const BMICalculator = () => {
   const calculateBMI = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/bmidiet/bmi', { weight, height, gender });
+      const response = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/bmidiet/bmi', { weight, height, gender });
       setResult(response.data);
     } catch (error) {
       console.error('Error calculating BMI:', error);
