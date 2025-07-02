@@ -23,7 +23,7 @@ const Payment = () => {
     if (!error) {
       try {
         // Call the backend to create a payment intent
-        const { data: clientSecret } = await axios.post('http://localhost:5000/api/payment/create-payment-intent', {
+        const { data: clientSecret } = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/payment/create-payment-intent', {
           amount: 100, // Example amount
         });
 
