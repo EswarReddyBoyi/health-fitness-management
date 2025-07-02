@@ -19,7 +19,7 @@ const ProfilePage = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('/api/users/profile', {
+        const res = await axios.get('https://health-fitness-management-system-backend.onrender.com/api/users/profile', {
           headers: { 'Authorization': `Bearer ${token}` },
         });
         
@@ -52,7 +52,7 @@ const ProfilePage = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.put('/api/users/profile', updatedProfile, {
+      const res = await axios.put('https://health-fitness-management-system-backend.onrender.com/api/users/profile', updatedProfile, {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
