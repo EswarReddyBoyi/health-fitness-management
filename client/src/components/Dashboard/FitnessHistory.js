@@ -47,7 +47,7 @@ const FitnessHistory = () => {
   const onSaveClick = async () => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/fitnessRecords/${editRecordId}`,
+        `https://health-fitness-management-system-backend.onrender.com/api/fitnessRecords/${editRecordId}`,
         formData
       );
       console.log('Record updated successfully:', res.data);
@@ -64,7 +64,7 @@ const FitnessHistory = () => {
   // Delete the selected record
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/fitnessRecords/${id}`);
+      await axios.delete(`https://health-fitness-management-system-backend.onrender.com/api/fitnessRecords/${id}`);
       setRecords(records.filter((record) => record._id !== id));
       setMessage('Record deleted successfully');
     } catch (err) {
