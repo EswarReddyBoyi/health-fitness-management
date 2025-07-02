@@ -25,7 +25,7 @@ function Login() {
 
       const body = JSON.stringify({ email, password });
 
-      const res = await axios.post('/api/auth/login', body, config);
+      const res = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/auth/login', body, config);
       console.log('User logged in successfully:', res.data);
 
       // Store token in localStorage (optional)
