@@ -7,7 +7,7 @@ const InvoicesList = () => {
 
   useEffect(() => {
     // Fetch the list of invoices from the backend
-    axios.get('http://localhost:5000/api/payments/invoices')
+    axios.get('https://health-fitness-management-system-backend.onrender.com/api/payments/invoices')
       .then(response => setInvoices(response.data))
       .catch(error => console.error('Error fetching invoices:', error));
   }, []);
