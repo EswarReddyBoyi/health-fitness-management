@@ -7,7 +7,7 @@ const SlotBooking = () => {
 
   const handleBooking = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/slots/book', { slotId });
+      const response = await axios.post('https://health-fitness-management-system-backend.onrender.com/api/slots/book', { slotId });
       setMessage(response.data.msg); // Display success message
     } catch (error) {
       if (error.response) {
