@@ -26,7 +26,7 @@ A full-stack MERN application that helps users manage fitness activities, calcul
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/health-fitness-management.git
+git clone https://github.com/EswarReddyBoyi/health-fitness-management.git
 cd health-fitness-management
 ````
 ---
