@@ -32,17 +32,15 @@ cd health-fitness-management
 ---
 
 ### 2. Install dependencies
-```bash
+
 For client:
-bash
-Copy
-Edit
+````
 cd client
 npm install
+````
 For server:
-bash
-Copy
-Edit
+````
 cd ../server
 npm install
+````
 
